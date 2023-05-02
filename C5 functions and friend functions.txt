@@ -1,0 +1,137 @@
+#include<stdio.h>
+void Sum(int, int);
+void Diff(int, int);
+void Mult(int, int);
+void Div(int, int);
+void main()
+{
+int a,b;
+printf("The sum, difference, multiplication and division of the 2 numbers is\n ");
+scanf("%d%d",&a,&b);
+Sum(a,b);
+Diff(a,b);
+Mult(a,b);
+Div(a,b);
+}
+void Sum(int a, int b)
+{
+printf("The sum is %d\n",a+b);
+}
+void Diff(int a, int b)
+{
+printf("The difference is %d\n",a-b);
+}
+void Mult(int a, int b)
+{
+printf("The multiplication is %d\n",a*b);
+}
+void Div(int a, int b)
+{
+printf("The division is %d\n",a/b);
+}
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int cr(float);
+int sq(float);
+int tri(float, float);
+int rect(float, float);
+int main()
+{
+float r,s,h,ba,l,b;
+printf("The areas of various 2-D shapes are:\n");
+scanf("%f%f%f%f%f%f",&r,&s,&h,&ba,&l,&b);
+cr(r);
+sq(s);
+tri(h,ba);
+rect(l,b);
+}
+int cr(float r)
+{
+printf("The area of circle is : %f\n",3.14*r*r);
+}
+int sq(float s)
+{
+printf("The area of square is : %f\n",s*s);
+}
+int tri(float h, float ba)
+{
+printf("The area of triangle is : %f\n",0.5*h*ba);
+}
+int rect(float l, float b)
+{
+printf("The area of rectangle is : %f\n",l*b);
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+class Distance{
+  private:
+  int km,m;
+  public:
+  void get()
+  {
+    // Enter the km and m
+    cin>>km>>m;
+  }
+  friend float convert(Distance d);//declaration
+};
+float convert(Distance d)//defination
+{
+  return((d.km*1000)+d.m);
+}
+int main(){
+Distance d;
+d.get();
+cout<<"The distance in meters is : ";
+cout<<convert(d)<<"m";
+return 0;
+}
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class B;
+class A{
+  private:
+  int x;
+  public:
+  friend void Access(A objA,B objB);
+};
+class B{
+  private:
+  int y;
+  public:
+  friend void Access(A objA,B objB);
+};
+void Access(A objA, B objB)
+{
+  cout<<"Enter the value of x";
+  cin>>objA.x;
+  cout<<"Value is this"<<objA.x;
+  cout<<"Enter the value of y";
+  cin>>objB.y;
+  cout<<"Value is this"<<objB.y;
+}
+int main(){
+  A objA;
+  B objB;
+  Access(objA,objB);
+  return 0;
+}
+

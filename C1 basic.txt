@@ -1,0 +1,106 @@
+#include<stdio.h>
+int main() {
+    printf("Violet\n");
+    printf("Indigo\n");
+    printf("Blue\n");
+    printf("Green\n");
+    printf("Yellow\n");
+    printf("Orange\n");
+    printf("Red\n");
+    printf("Black\n");
+    printf("White\n");
+    printf("Purple\n");
+    printf("The months of the year are :\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember\n");
+    printf("The days of the week are :\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday");
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+int a=50;
+char b='a';
+float c=55.5f;
+double d=72.7;
+printf("%d is an integer\n",a);
+printf("%c is a character\n",b);
+printf("%f is a floating point number\n",c);
+printf("%d is a double\n",d);
+return 0;
+}
+
+
+
+#include<stdio.h>
+int main() {
+    int x=10,y=20,z;
+    z = x+y;
+    float a=5.5,b=6.6,c;
+    c = a+b;
+    printf("Sum1 is %d\n",z);
+    printf("Sum2 is %f",c);
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+int a=5,b=3;
+a<b ? printf("a is smaller") : printf("b is smaller");
+return 0;
+}
+
+
+int main()
+{
+int number = 824;
+(number%3==0) ? printf("Divisible"):printf("Not Divisible");
+return 0;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+int a=7,b=9;
+int c=5,d=4;
+if(a<b && c>d)
+{
+printf("a is greater than b and c is less than d");
+}
+else if(a==b || c==d)
+{
+printf("Either a is equal to b or c is equal to d");
+}
+else
+{
+printf("Program End");
+}
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+int num1 = 10,num2=5,num3=4;
+if(num1>=num2 && num1>=num3)
+{
+printf("%d is largest number",num1);
+}
+else if(num2>=num1 && num2>=num3)
+{
+printf("%d is largest number",num2);
+}
+else
+{
+printf("%d is largest number",num3);
+}
+return 0;
+}
+
+
+

@@ -1,0 +1,70 @@
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Choose a colour by inputing a number from 1 to 10 \n");
+    scanf("%d",&i);
+switch (i)
+{
+    case 1: printf("Violet\n");
+    break;
+    case 2: printf("Indigo\n");
+    break;
+    case 3: printf("Blue\n");    
+    break;
+    case 4: printf("Green\n");
+    break;
+    case 5: printf("Yellow\n");
+    break;
+    case 6: printf("Orange\n");
+    break;
+    case 7: printf("Red\n");
+    break;
+    case 8: printf("Black\n");
+    break;
+    case 9: printf("White\n");
+    break;
+    case 10: printf("Purple\n");
+    break;
+    default: printf("No colour chosen");
+}
+return 0;
+}
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+#define pi 3.14
+int main()
+{
+    int i;
+    float r,c,s,a1,l,b,a2;
+    printf("Choose 1 for Area of circle, 2 for Area of square, 3 for Area of rectangle \n");
+    scanf("%d",&i);
+switch (i)
+{
+    case 1: printf("Enter radius of circle : \n");
+    scanf("%f",&r);
+    c=pi*r*r;
+    printf("Area of circle is %d\n",c);
+    break;
+    case 2: printf("Enter side of square : \n");
+    scanf("%f",&s);
+    a1=s*s;
+    printf("Area of square is %d\n",a1);
+    break;
+    case 3: printf("Enter length and breadth of rectangle : \n");
+    scanf("%f%f",&l,&b);
+    a2=l*b;
+    printf("Area of rectangle is %d\n",a2);    
+    break;
+    default: printf("No area chosen");
+}
+return 0;
+}

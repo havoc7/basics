@@ -1,0 +1,202 @@
+Using break tags: 
+
+<p><h2>My fav languages are :</h2> 
+<br> <h1>C++ </h1>
+<br><h2>Java </h2> 
+<br><h3>C </h3> 
+<br><h4>SQL </h4> 
+<br><h5>Python </h5></p>
+
+
+Using anchor tags and creating hyperlinks :
+
+<a href="https://www.jdoodle.com/online-compiler-c++/">This is link for online C++ compiler</a><br>
+<a href="https://www.jdoodle.com/c-online-compiler/">This is link for online C compiler</a><br>
+<a href="https://www.jdoodle.com/online-java-compiler/">This is link for online Java compiler</a><br>
+<a href="https://www.jdoodle.com/execute-sql-online/">This is link for online SQL compiler</a><br>
+<a href="https://www.jdoodle.com/python3-programming-online/">This is link for online Python compiler</a>
+
+
+<body style="background-color:black;">
+<h2 style="background-color:blue;font-family:arial;text-align:center;">This is my fav color</h2>
+<h3 style="background-color:purple;font-family:impact;">This is my fav color</h3>
+   <i>This is italics</i> 
+  <b>This is bold</b>
+  <p style="font-size:160%;">Paragraph</p>    
+
+<body style="background-color:pink">
+    <div id="menu"align="middle"style="background-color:blue">Heading</div>
+<div id="2nd line"align="middle"style="background-color:blue">
+    <p>We are creating this <span style="color:yellow">website</span> for the first time.</p>
+    </div>
+    <p>This is <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+<div class="welcome">Welcome To MyWeb</div>
+<p>Code in Python: <code>print('Hello, world!')</code></p>
+<p>Code in C++: <kbd>#include <iostream>
+using namespace std;
+int main() 
+{
+ cout<<"Hello World!";
+}</kbd></p>
+<p>Code in C: <samp>
+    #include <stdio.h>
+int main() {
+    printf("Hello world");
+    return 0;
+}</samp></p>
+<!-- Comment-->
+<table style="width:70%"border=1>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Erwin</td>
+        <td>Smith</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Eren</td>
+        <td>Jeager</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>Levi</td>
+        <td>Ackermann</td>
+        <td>29</td>
+    </tr>
+</body>
+
+
+
+
+<script>
+function myFunction(){
+    document.getElementById("demo").innerHTML="Hello JavaScript!";
+}
+</script>
+<div id="menu" style="background-color: yellow">
+<p id="demo">My paragraph</p>
+    <button type="button" onclick="myFunction()">Try it
+</button>
+</div>
+
+
+
+<style>
+    .city{
+        background-color:tomato;
+        color:white;
+        border:2px solid black;
+        margin:20px;
+        padding:20px;
+    }
+</style>
+<div class="city">
+<h2>LONDON</h2>
+<p >London is the capital of England.</p>
+</div>
+<div class="city">
+<h2>PARIS</h2>
+<p >Paris is the capital of France.</p>
+</div>
+<div class="city">
+<h2>TOKOYO</h2>
+<p >Tokoyo is the capital of Japan.</p>
+</div>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+<h2>Background Stretch</h2>
+<p>Set the background-size property to "100% 100%" and the background image will be stretched to cover the entire element, 
+in this case the body element.</p>
+</body>
+</html>
+
+
+<style>
+#main{
+     background-color:blue;
+        color:yellow;
+        border:2px solid black;
+        margin:20px;
+        padding:20px;
+}
+    .city{
+        background-color:tomato;
+        color:white;
+        border:2px solid black;
+        margin:20px;
+        padding:20px;
+    }
+</style>
+<h1 id="main">Capitals</h1>    
+<div class="city">
+<h2 id="main">LONDON</h2>
+<p >London is the capital of England.</p>
+
+<h2 id="main">PARIS</h2>
+<p >Paris is the capital of France.</p>
+
+<h2 id="main">TOKOYO</h2>
+<p >Tokoyo is the capital of Japan.</p>
+</div>
+
+
+
+<form action="/action_page.php">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" value="ABC"><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" value="XYZ"><br>
+    <input type="submit" id="Submit"><br><br>
+</form>
+<p>On clicking the submit button, the information will be passed to a page named/action_page.php</p>
+
+
+<p>Demonstrating get method</p>
+<form action="/action_page.php" target="_blank" method="get">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" value="ABC"><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" value="XYZ"><br>
+    <input type="submit" id="Submit"><br><br>
+</form>
+<p>On clicking the submit button, the information will be passed to a page named/action_page.php</p>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('C:/Users/Srinigha Rajendran/Downloads/tree-736885__480.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<h2>Background Cover</h2>
+
+<p>Set the background-size property to "cover" and the background image will cover the entire element, in this case the body element.</p>
+
+</body>
+</html>
+
+

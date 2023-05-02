@@ -1,0 +1,33 @@
+#include<stdio.h>
+#define x 0.5
+int main()
+{
+float h=5,b=10;
+printf("Area of triangle is %f",x*h*b);
+#undef x
+
+return 0;
+}
+
+
+
+
+
+#include<stdio.h>
+#define x 9/5
+#define y 32
+int main()
+{
+float c;
+scanf("%f",&c);
+printf("Temp in celcius is %f\n",c);
+printf("Temp in fahrenheit is %f",(x*c)+y);
+#undef x
+return 0;
+}
+
+
+
+
+
+

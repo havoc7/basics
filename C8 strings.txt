@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+char a[4],name[20]="Sarthak Rout";
+printf("%s\n",name);
+a[0] = name[5];
+printf("%s",a);
+}
+
+
+
+
+
+

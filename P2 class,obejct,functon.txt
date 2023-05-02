@@ -1,0 +1,80 @@
+LOOPS
+
+
+
+
+class employee:
+    def __init__(self,id,name,position,n):
+        self.id=id
+        self.name=name
+        self.position=position
+        self.n=n
+    def myfunc(self):
+        print("Employee ID : " + self.id)
+        print("Employee NAME : " + self.name)
+        print("Employee POSITION : " + self.position)
+        print("Employee NUMBER OF YEARS WORKING : " + self.n)
+        
+p1 = employee("2004ABC","Sanjot Kaur","Clerk","17")
+p1.myfunc()
+
+
+
+
+
+
+
+class fruits:
+    def season(self):
+        print("Seasonal fruits are always more expensive")
+class apple(fruits):
+    def season(self):
+        print("Apples are good in winter")
+def favfruit(fav):
+    fav.season()
+a=fruits()
+favfruit(a)
+a=apple()
+favfruit(a)
+
+
+Seasonal fruits are always more expensive
+Apples are good in winter
+
+
+class fruits:
+    def seasons(self):
+        print("Seasonal fruits are always more expensive")
+class apple(fruits):
+    def season(self):
+        print("Apples are good in winter")
+def favfruit(fav):
+    fav.season()
+    fav.seasons()
+
+a=apple()
+favfruit(a)         
+
+
+
+
+class fruits:
+    def seasons(self):
+        print("Seasonal fruits are always more expensive")
+class apple(fruits):
+    def season(self):
+        print("Apples are good in winter")
+class greenapple(apple):
+    def taste(self,taste):
+        print(taste)
+a=greenapple()
+a.seasons()
+a.season()
+a.taste("Sour")
+
+
+
+
+Seasonal fruits are always more expensive
+Apples are good in winter
+Sour

@@ -1,0 +1,49 @@
+public class MyClass {
+    public static void main(String args[]) {
+      int x,i;
+    System.out.println("Cube of first 10 numbers is: \n");
+      for(i=0;i<10;i++)
+      {
+      x=i*i*i;
+      System.out.println(x + "\n");
+      }
+    }
+}
+
+
+
+
+
+
+public class MyClass {
+    public static void main(String args[]) {
+        int i;
+    System.out.println("Numbers divisible by 2 and 3 both from 1 to 30 : \n");
+      for(i=1;i<=30;i++) 
+      {
+        if((i%2==0)&&(i%3==0)) 
+        {
+            System.out.println(i + "\n");
+        }
+      }
+    }
+}
+
+
+
+
+
+
+
+
+public class MyClass {
+     public static void main(String args[]) {
+         int x=1,i;
+      for(i=5;i>1;i--)
+      {
+      x=x*i;    
+      }
+      System.out.println("Factorial is : " + x);
+    }
+}
+

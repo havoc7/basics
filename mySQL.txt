@@ -1,0 +1,102 @@
+CREATE TABLE NAMES (Id integer, Name text);
+
+insert into NAMES values(1,'Tom');
+insert into NAMES values(4,'Frank');
+insert into NAMES values(7,'Lucy');
+insert into NAMES values(3,'Will');
+insert into NAMES values(2,'Jack');
+insert into NAMES values(5,'Karen');
+insert into NAMES values(6,'Karan');
+insert into NAMES values(8,'Rust');
+
+select * from NAMES order by Id desc;
+SELECT SUM(HINDI), SUM(ENG) FROM NAMES;
+
+
+
+CREATE TABLE NAMES(Id integer PRIMARY KEY, Name text, Eng integer, Maths integer);
+
+/* Create few records in this table */
+INSERT INTO NAMES VALUES(1,'Tom',60,77);
+INSERT INTO NAMES VALUES(2,'Lucy',92,71);
+INSERT INTO NAMES VALUES(3,'Frank',73,73);
+INSERT INTO NAMES VALUES(4,'Jane',65,56);
+INSERT INTO NAMES VALUES(5,'Robert',97,80);
+
+SELECT SUM(Eng) FROM NAMES;
+SELECT AVG(Eng) FROM NAMES WHERE Eng>=70;
+SELECT MIN(Maths) FROM NAMES WHERE Id>=2;
+SELECT MAX(Maths) FROM NAMES;
+SELECT COUNT(*) FROM NAMES WHERE Eng<90;
+
+
+1)Diaplay all names from the table that begin with A.
+2)Display records of all students in alphabetical order of their names.
+3)Display records of those students who have scored marks more than 70.
+4)Change the name of student Tom to Tim.
+
+
+
+CREATE TABLE NAMES(Id integer PRIMARY KEY, Name text);
+
+INSERT INTO NAMES VALUES(1,'Tom');
+INSERT INTO NAMES VALUES(2,'Lucy');
+INSERT INTO NAMES VALUES(3,'Frank');
+INSERT INTO NAMES VALUES(4,'Jane');
+INSERT INTO NAMES VALUES(5,'Robert');
+
+update NAMES set Name = 'Jake' 
+where Name = 'Jane';
+Select * from NAMES;
+
+
+
+create table Emp (Srno int ,Id int ,Name text ,salary int); 
+
+        insert into Emp values(1,1001,"Tom",155000);
+        insert into Emp values(2,1002,"Max",90000);
+        insert into Emp values(3,1003,"Williom,",100000);
+        insert into Emp values(4,1004,"Dezy",56000);
+        insert into Emp values(5,1005,"Dolly",468000);
+        insert into Emp values(6,1006,"Lily",103000);
+        insert into Emp values(7,1007,"Mady",160000);
+        insert into Emp values(8,1008,"John",238000);
+        insert into Emp values(9,1009,"Alex",240000);
+        insert into Emp values(10,1010,"Root",209000);
+        DELETE From Emp WHERE Id>1009;
+        DELETE From Emp WHERE Id=1003 OR salary>200000;
+        DELETE from Emp WHERE Name LIKE "a%" ;
+        DELETE from Emp WHERE Name LIKE "%l%"; 
+        DROP TABLE Emp;
+        SELECT * from Emp;
+
+
+1)Display from table employees where Id=1001
+2)Change the name of employee whose salary is 50000 to Kenny.
+ans 1 : select * from Emp where Id=101;
+ans 2 : update Emp SET Name="Kenny" where salary=56000;  select * from Emp;
+
+
+
+create table Emp (Srno int ,Id int ,Name text ,salary int); 
+
+        insert into Emp values(1,101,"Tom",155000);
+        insert into Emp values(2,102,"Max",90000);
+        insert into Emp values(3,103,"Williom,",100000);
+        insert into Emp values(4,104,"Dezy",56000);
+        insert into Emp values(5,105,"Dolly",468000);
+        insert into Emp values(6,106,"Lily",103000);
+        insert into Emp values(7,107,"Mady",160000);
+        insert into Emp values(8,108,"John",238000);
+        insert into Emp values(9,109,"Alex",240000);
+        insert into Emp values(10,110,"Root",209000);
+        select Name from Emp WHERE Id=104 ;
+
+1)display sum of salary of all employees Id's are even 
+2)display average salary of all 
+3)return the max salary from Emp 
+4)return min salary from Emp of those employees whose Id is less than 109 but greater than 103
+5)Count the number of employees whose salary is greater than 100000 and name has letter 'o'
+
+
+LIKE clause, JOIN clause

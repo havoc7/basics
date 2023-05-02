@@ -1,0 +1,39 @@
+https://docs.oracle.com/cd/B10500_01/appdev.920/a96624/04_struc.htm#:~:text=Overview%20of%20PL%2FSQL%20Control,Control%3A%20GOTO%20and%20NULL%20Statements
+
+
+1)display all contents of table student
+2)display sum of marks obtained in all subjects
+3)display average marks of all subjects
+4)display names of all students in alphabetical order
+5)Change the name of student with ID 105 to 'Jackie'
+6)Change marks in Socials of student with name 'Rose' to 95
+7)Delete the details of students who have scored less than 35 in English and Science
+8)Display names of students whose marks in all subjects is greater than 75
+9)Dispaly number of students who have scored less than 50 marks in Maths 
+10)Display minimum and maximum marks in maths 
+11)Drop the table student 
+
+1) SELECT * FROM STUDENT;
+
+2) SELECT SUM(ENGLISH),SUM(MATH),SUM(SCIENCE),SUM(SOCIALS) FROM STUDENT;
+
+3) SELECT AVG(ENGLISH),AVG(MATH),AVG(SCIENCE),AVG(SOCIALS) FROM STUDENT;
+
+4) SELECT NAME FROM STUDENT ORDER BY NAME;
+
+5) UPDATE STUDENT SET NAME="JACKIE" WHERE ID=104;
+   SELECT * FROM STUDENT;
+
+6) UPDATE STUDENT SET SOCIALS=95 WHERE NAME="ROSE";
+
+7) DELETE FROM STUDENT WHERE ENGLISH<35 AND SCIENECE<35;
+   SELECT * FROM STUDENT;
+
+8) SELECT NAME FROM STUDENT WHERE ENGLISH>75 AND SCIENECE>75 AND MATH>75 AND SOCIALS>75;
+
+9) SELECT COUNT(*) FROM STUDENT WHERE MATHS<50;
+
+10) SELECT MAX(MATHS) FROM STUDENT;
+    SELECT MAX(MATHS) FROM STUDENT;
+
+11) DROP TABLE STUDENT;

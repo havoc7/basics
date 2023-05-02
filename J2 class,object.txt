@@ -1,0 +1,62 @@
+1. Write a function to calculate the addition of two numbers.
+2. Write a function to return area of a rectangle.
+3. Write a function to print if a number is even or odd.
+
+
+
+
+class parent
+{
+    private int num;
+    parent(int n)
+    {num=n;}
+    public int ret()
+    {
+        return num;}
+        };
+public class MyClass {
+public static void main(String args[]) {
+      parent obj = new parent(45);
+    //   obj.num=89;
+
+      System.out.println(obj.ret());
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+class parent
+{
+    private int num1;
+    parent(int n)
+    {num1=n;}
+    private float num2;
+    parent(float m)       
+    {num2=m;}
+    public int ret1()
+    {
+    return num1;
+    }
+    public float ret2()
+    {
+    return num2;
+    }
+};
+public class MyClass {
+public static void main(String args[]) {
+    parent obj1 = new parent(45.4f);
+    System.out.println(obj1.ret2());
+    parent obj2 = new parent(123.3f);
+    System.out.println(obj2.ret2());
+    parent obj3 = new parent(456);
+    System.out.println(obj3.ret1());
+    }
+}

@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main() {
+cout<<"My name is Sarthak\n";
+cout<<"*\n";
+cout<<"**\n";
+cout<<"***\n";
+cout<<"**\n";
+cout<<"*";
+}
